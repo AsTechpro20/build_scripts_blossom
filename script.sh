@@ -4,7 +4,7 @@
 set -e
 export PROJECTFOLDER="Lineage21"
 export PROJECTID="72"
-export REPO_INIT="repo init -u https://github.com/accupara/los20.git -b lineage-20.0 --git-lfs --depth=1"
+export REPO_INIT="repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1"
 export BUILD_DIFFERENT_ROM="repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 14 --git-lfs" # Change this if you'd like to build something else
 
 # Destroy Old Clones
