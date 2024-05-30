@@ -1,4 +1,4 @@
-#ProjectSakura build script for crave
+#ProjectSakura-A14 build script
 
 #Remove existing local_mainfests
 rm -rf .repo/local_manifests/
@@ -10,7 +10,7 @@ repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 14 --git-
 git clone https://github.com/AsTechpro20/local_manifests -b main .repo/local_manifests && \
 
 #Details
-export BUILD_USERNAME=AsTechpro20
+export BUILD_USERNAME=AsTechpro20 
 export BUILD_HOSTNAME=crave
 
 # Sync the repositories
