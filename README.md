@@ -1,4 +1,4 @@
-<h1 align="center" id="title">Build_Script</h1>
+<h1 align="center" id="title">Build_Scripts</h1>
 <p align="center" id="description">Build Script for ProjectSakura (crave.io) </p>
 
 ```
