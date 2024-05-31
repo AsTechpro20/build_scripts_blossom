@@ -17,6 +17,16 @@ git clone https://github.com/AsTechpro20/local_manifests -b a14-manifests .repo/
 export BUILD_USERNAME=AsTechpro20 
 export BUILD_HOSTNAME=crave
 
+# Initialize repo with Git LFS
+echo "Reinitializing repo with Git LFS..."
+repo init --git-lfs || { echo "Repo re-init with Git LFS failed"; exit 1; }
+
+# Clean up chromium-webview prebuilt directories
+echo "Cleaning up chromium-webview prebuilts..."
+rm -rf external/chromium-webview/prebuilt/* || { echo "Failed to remove chromium-webview prebuilts"; exit 1; }
+rm -rf .repo/projects/external/chromium-webview/prebuilt/*.git || { echo "Failed to remove chromium-webview project git files"; exit 1; }
+rm -rf .repo/project-objects/LineageOS/android_external_chromium-webview_prebuilt_*.git || { echo "Failed to remove chromium-webview project objects"; exit 1; }
+
 # Sync the repositories
 echo "Syncing the repositories..."
 /opt/crave/resync.sh || { echo "Resync failed"; exit 1; }
