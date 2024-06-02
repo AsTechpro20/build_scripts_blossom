@@ -32,7 +32,7 @@ curl https://github.com/LineageOS/android_build_soong/commit/dea6617bc5bb1675e27
 
 #Back to main directory
 echo "Returning to the main directory"
-croot || { echo "Failed to return to the main directory"; exit 1; }
+cd ../.. || { echo "Failed to return to the main directory"; exit 1; }
 
 # Initialize repo with Git LFS
 echo "Reinitializing repo with Git LFS..."
