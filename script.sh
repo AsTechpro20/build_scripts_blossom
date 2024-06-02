@@ -22,14 +22,14 @@ echo "Syncing the repositories..."
 /opt/crave/resync.sh || { echo "Resync failed"; exit 1; }
 
 #Patch for unrecognized property "product_variables.malloc_not_svelte.srcs" issue
-#Change to the system/soong directory
-cd build/soong; || { echo "Directory not found: build/soong"; exit 1; }
+#Change to the build/soong directory
+cd build/soong || { echo "Directory not found: build/soong"; exit 1; }
 
 #Applying patch
-curl https://github.com/LineageOS/android_build_soong/commit/dea6617bc5bb1675e27d9e77f20e1ef31c9f3c4b.patch | git am; || { echo "Failed to apply the patch"; exit 1; }
+curl https://github.com/LineageOS/android_build_soong/commit/dea6617bc5bb1675e27d9e77f20e1ef31c9f3c4b.patch | git am || { echo "Failed to apply the patch"; exit 1; }
 
 #Back to main dir
-croot;
+croot
 
 # Initialize repo with Git LFS
 echo "Reinitializing repo with Git LFS..."
