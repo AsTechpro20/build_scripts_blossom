@@ -31,7 +31,7 @@ source build/envsetup.sh || { echo "Envsetup failed"; exit 1; }
 
 # Lunch configuration
 echo "Configuring lunch..."
-lunch lineage_Mi439_4_19-ap1a-userdebug || { echo "Lunch configuration failed"; exit 1; }
+lunch lineage_mi439-ap1a-userdebug || { echo "Lunch configuration failed"; exit 1; }
 
 # Build the ProjectSakura
 echo "Building ProjectSakura..."
