@@ -11,7 +11,7 @@ repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 14 --git-
 
 # Clone local_manifests repository
 echo "Cloning local_manifests repository..."
-git clone https://github.com/AsTechpro20/local_manifests -b a14-manifests .repo/local_manifests || { echo "Cloning local_manifests failed"; exit 1; }
+git clone https://github.com/PhantomEnigma/local_manifests_clo.git -b udc-2-evo .repo/local_manifests || { echo "Cloning local_manifests failed"; exit 1; }
 
 # Set build details
 export BUILD_USERNAME=AsTechpro20 
