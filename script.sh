@@ -21,6 +21,18 @@ export BUILD_HOSTNAME=crave
 echo "Syncing the repositories..."
 /opt/crave/resync.sh || { echo "Resync failed"; exit 1; }
 
+#Change to the vendor/lineage directory
+echo "Change to the build/soong directory"
+cd vendor/lineage || { echo "Directory not found: build/soong"; exit 1; }
+
+#Applying patch
+echo "Applying patches..."
+curl  https://github.com/AsTechpro20/vendor_sakura/commit/34e5228d5af48e843932df7da825672bca675f49.patch | git am || { echo "Failed to apply the patch"; }
+
+#Back to main directory
+echo "Returning to the main directory"
+cd ../.. || { echo "Failed to return to the main directory"; exit 1; }
+
 # Initialize repo with Git LFS
 echo "Reinitializing repo with Git LFS..."
 repo forall -vc "git lfs pull" || { echo "Repo re-init with Git LFS failed"; exit 1; }
