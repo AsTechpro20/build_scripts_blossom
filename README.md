@@ -8,5 +8,5 @@ curl https://raw.githubusercontent.com/AsTechpro20/build_scripts/Project-Sakura-
 <h2>For crave:</h2>
 
 ```
-crave run --no-patch -- "curl https://raw.githubusercontent.com/AsTechpro20/build_scripts/Project-Sakura-Scrpit/script.sh | bash"
+crave run --no-patch -- "curl https://raw.githubusercontent.com/AsTechpro20/build_scripts/Dot-11/script.sh | bash"
 ```
