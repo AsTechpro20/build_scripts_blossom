@@ -7,11 +7,11 @@ rm -rf .repo/local_manifests/
 
 # Initialize DotOS repo
 echo "Initializing DotOS repo..."
-repo init -u git://github.com/DotOS/manifest.git -b dot11
+repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 11
 
 # Clone local_manifests repository
 echo "Cloning local_manifests repository..."
-git clone https://github.com/AsTechpro20/local_manifests.git -b DotOS-11 .repo/local_manifests
+git clone https://github.com/AsTechpro20/local_manifests.git -b ProjectSakura-11 .repo/local_manifests
 
 # Sync the repositories
 echo "Syncing the repositories..."
@@ -19,11 +19,11 @@ echo "Syncing the repositories..."
 
 # Set up build environment
 echo "Setting up build environment..."
-source build/envsetup.sh
+. build/envsetup.sh
 
 # Lunch configuration
 echo "Configuring lunch..."
-lunch dot_Mi439_4_19-userdebug
+lunch lineage_Mi439_4_19-userdebug
 
 # Build the DotOS-11
 echo "Building DotOS-11..."
