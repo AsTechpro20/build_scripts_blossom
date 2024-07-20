@@ -27,6 +27,7 @@ lunch lineage_Mi439-userdebug
 
 # Build the DotOS-11
 echo "Building DotOS-11..."
+make installclean
 make bacon
 
 echo "Build completed successfully!"
