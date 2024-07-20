@@ -20,9 +20,9 @@ echo "Syncing the repositories..."
 echo "Setting up build environment..."
 . build/envsetup.sh
 
-# Lunch configuration
-echo "Configuring lunch..."
-lunch lineage_Mi439-userdebug
+# Brunch configuration
+echo "Configuring brunch..."
+brunch Mi439
 
 # Build the ProjectSakura
 echo "Building ProjectSakura-11..."
