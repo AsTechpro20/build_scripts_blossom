@@ -9,7 +9,7 @@ echo "Cloning local_manifests repository..."
 git clone https://github.com/AsTechpro20/local_manifests.git -b ProjectSakura-11 .repo/local_manifests
 
 # Initialize ProjectSakura repo
-echo "Initializing DotOS repo..."
+echo "Initializing ProjectSakura repo..."
 repo init -u https://github.com/LineageOS/android.git -b lineage-18.1 --git-lfs
 
 # Sync the repositories
