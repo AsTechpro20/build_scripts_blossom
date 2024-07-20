@@ -6,7 +6,7 @@ rm -rf .repo/local_manifests/
 
 # Clone local_manifests repository
 echo "Cloning local_manifests repository..."
-git clone https://github.com/AsTechpro20/local_manifests.git -b ProjectSakura-11 .repo/local_manifests
+git clone https://github.com/AsTechpro20/local_manifests.git -b Lineage-18.1 .repo/local_manifests
 
 # Initialize Lineage-18.1 repo
 echo "Initializing Lineage-18.1 repo..."
