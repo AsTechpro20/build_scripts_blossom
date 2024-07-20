@@ -1,4 +1,4 @@
-#ProjectSakura-11 build script
+#Lineage-18.1 build script
 
 # Remove existing local_manifests
 echo "Removing existing local_manifests..."
@@ -8,8 +8,8 @@ rm -rf .repo/local_manifests/
 echo "Cloning local_manifests repository..."
 git clone https://github.com/AsTechpro20/local_manifests.git -b ProjectSakura-11 .repo/local_manifests
 
-# Initialize ProjectSakura repo
-echo "Initializing ProjectSakura repo..."
+# Initialize Lineage-18.1 repo
+echo "Initializing Lineage-18.1 repo..."
 repo init -u https://github.com/LineageOS/android.git -b lineage-18.1 --git-lfs
 
 # Sync the repositories
@@ -20,8 +20,8 @@ echo "Syncing the repositories..."
 echo "Setting up build environment..."
 . build/envsetup.sh
 
-# Brunch configuration and Building ProjectSakura
-echo "Configuring brunch and building ProjectSakura..."
+# Brunch configuration and Building Lineage-18.1
+echo "Configuring brunch and building Lineage-18.1..."
 brunch Mi439
 
 echo "Build completed successfully!"
