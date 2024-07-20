@@ -11,7 +11,7 @@ repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 11
 
 # Clone local_manifests repository
 echo "Cloning local_manifests repository..."
-git clone https://github.com/AsTechpro20/local_manifests.git -b ProjectSakura-11 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b A11 .repo/local_manifests
 
 # Sync the repositories
 echo "Syncing the repositories..."
@@ -23,7 +23,7 @@ echo "Setting up build environment..."
 
 # Lunch configuration
 echo "Configuring lunch..."
-lunch lineage_Mi439_4_19-userdebug
+lunch lineage_Mi439-userdebug
 
 # Build the DotOS-11
 echo "Building DotOS-11..."
