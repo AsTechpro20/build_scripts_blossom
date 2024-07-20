@@ -20,13 +20,8 @@ echo "Syncing the repositories..."
 echo "Setting up build environment..."
 . build/envsetup.sh
 
-# Brunch configuration
-echo "Configuring brunch..."
+# Brunch configuration and Building ProjectSakura
+echo "Configuring brunch and building ProjectSakura..."
 brunch Mi439
-
-# Build the ProjectSakura
-echo "Building ProjectSakura-11..."
-make installclean
-make bacon
 
 echo "Build completed successfully!"
