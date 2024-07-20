@@ -10,7 +10,7 @@ git clone https://github.com/AsTechpro20/local_manifests.git -b ProjectSakura-11
 
 # Initialize ProjectSakura repo
 echo "Initializing DotOS repo..."
-repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 11
+repo init -u https://github.com/LineageOS/android.git -b lineage-18.1 --git-lfs
 
 # Sync the repositories
 echo "Syncing the repositories..."
