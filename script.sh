@@ -30,5 +30,3 @@ lunch lineage_Mi439-ap1a-userdebug
 #Building Lineage-21
 echo "Building Lineage-21..."
 mka bacon
-
-echo "Build completed successfully!"
