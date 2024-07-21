@@ -3,6 +3,9 @@
 # Remove existing local_manifests
 echo "Removing existing local_manifests..."
 rm -rf .repo/local_manifests/ 
+rm -rf  vendor/xiaomi
+rm -rf  kernel/xiaomi
+rm -rf  device/xiaomi
 
 # Clone local_manifests repository
 echo "Cloning local_manifests repository..."
