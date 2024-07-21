@@ -23,8 +23,12 @@ echo "Syncing the repositories..."
 echo "Setting up build environment..."
 . build/envsetup.sh
 
-# Brunch configuration and Building Lineage-21
+# Lunch configuration
 echo "Configuring brunch and building Lineage-21..."
-brunch Mi439
+lunch lineage_Mi439-ap1a-userdebug
+
+#Building Lineage-21
+echo "Building Lineage-21..."
+mka bacon
 
 echo "Build completed successfully!"
