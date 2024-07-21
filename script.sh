@@ -8,8 +8,8 @@ rm -rf .repo/local_manifests/
 echo "Cloning local_manifests repository..."
 git clone https://github.com/AsTechpro20/local_manifests.git -b Lineage-21 .repo/local_manifests
 
-# Initialize Lineage-18.1 repo
-echo "Initializing Lineage-18.1 repo..."
+# Initialize Lineage-21 repo
+echo "Initializing Lineage-21 repo..."
 repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
 
 # Sync the repositories
