@@ -19,6 +19,12 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
 echo "Syncing the repositories..."
 /opt/crave/resync.sh 
 
+# Exports
+echo "Adding exports..."
+export BUILD_USERNAME=AsTechpro20
+export BUILD_HOSTNAME=crave
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
+
 # Set up build environment
 echo "Setting up build environment..."
 . build/envsetup.sh
