@@ -31,7 +31,7 @@ echo "Setting up build environment..."
 
 # Lunch configuration
 echo "Configuring brunch and building Lineage-21..."
-lunch lineage_Mi439_4_19-ap2a-userdebug
+brunch Mi439_4_19 userdebug || lunch lineage_Mi439_4_19-ap2a-userdebug
 
 #Building Lineage-21
 echo "Building Lineage-21..."
