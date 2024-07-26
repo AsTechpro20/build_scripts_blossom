@@ -9,7 +9,7 @@ rm -rf  device/xiaomi
 
 # Clone local_manifests repository
 echo "Cloning local_manifests repository..."
-https://github.com/Gtajisan/local_manifests.git -b Matrixx-14 .repo/local_manifests
+https://github.com/Gtajisan/local_manifests.git -b Experimental-14 .repo/local_manifests
 
 # Initialize Lineage-21 repo
 echo "Initializing Lineage-21 repo..."
@@ -31,7 +31,7 @@ echo "Setting up build environment..."
 
 # Lunch configuration
 echo "Configuring brunch and building Lineage-21..."
-brunch Mi439_4_19 userdebug || lunch lineage_Mi439_4_19-ap2a-userdebug
+lunch lineage_Mi439_4_19-ap2a-userdebug || lunch lineage_Mi439_4_19-userdebug
 
 #Building Lineage-21
 echo "Building Lineage-21..."
