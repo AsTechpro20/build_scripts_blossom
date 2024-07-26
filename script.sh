@@ -9,7 +9,7 @@ rm -rf  device/xiaomi
 
 # Clone local_manifests repository
 echo "Cloning local_manifests repository..."
-git clone https://github.com/AsTechpro20/local_manifests.git -b check .repo/local_manifests
+https://github.com/Gtajisan/local_manifests.git -b Matrixx-14 .repo/local_manifests
 
 # Initialize Lineage-21 repo
 echo "Initializing Lineage-21 repo..."
