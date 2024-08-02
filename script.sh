@@ -26,7 +26,7 @@ export BUILD_HOSTNAME=crave
 
 # Set up build environment
 echo "Setting up build environment..."
-. build/envsetup.sh
+source build/envsetup.sh
 
 # Lunch configuration
 echo "Configuring brunch and building Lineage-21..."
