@@ -9,7 +9,7 @@ rm -rf  device/xiaomi
 
 # Clone local_manifests repository
 echo "Cloning local_manifests repository..."
-git clone https://github.com/AsTechpro20/local_manifests.git -b check .repo/local_manifests
+git clone https://github.com/PhantomEnigma/local_manifests -b a14 .repo/local_manifests
 
 # Initialize Lineage-21 repo
 echo "Initializing Lineage-21 repo..."
@@ -23,7 +23,6 @@ echo "Syncing the repositories..."
 echo "Adding exports..."
 export BUILD_USERNAME=AsTechpro20
 export BUILD_HOSTNAME=crave
-export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 
 # Set up build environment
 echo "Setting up build environment..."
