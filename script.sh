@@ -1,4 +1,4 @@
-#Lineage-21 build script
+#Lineage-20 build script
 
 # Remove existing local_manifests
 echo "Removing existing local_manifests..."
@@ -9,11 +9,11 @@ rm -rf  device/xiaomi
 
 # Clone local_manifests repository
 echo "Cloning local_manifests repository..."
-git clone https://github.com/PhantomEnigma/local_manifests -b a14 .repo/local_manifests
+git clone https://github.com/AsTechpro20/local_manifests.git -b A13 .repo/local_manifests
 
-# Initialize Lineage-21 repo
-echo "Initializing Lineage-21 repo..."
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
+# Initialize Lineage-20 repo
+echo "Initializing Lineage-20 repo..."
+repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
 
 # Sync the repositories
 echo "Syncing the repositories..."
@@ -28,10 +28,6 @@ export BUILD_HOSTNAME=crave
 echo "Setting up build environment..."
 source build/envsetup.sh
 
-# Lunch configuration
-echo "Configuring brunch and building Lineage-21..."
-lunch lineage_Mi439_4_19-ap2a-userdebug 
-
-#Building Lineage-21
-echo "Building Lineage-21..."
-mka bacon
+#Building Lineage-20
+echo "Building Lineage-20..."
+brunch blossom
