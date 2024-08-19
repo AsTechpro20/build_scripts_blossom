@@ -7,6 +7,7 @@ rm -rf  vendor/xiaomi
 rm -rf  kernel/xiaomi
 rm -rf  device/xiaomi
 rm -rf  device/mediatek
+rm -rf  hardware/mediatek
 
 # Clone local_manifests repository
 echo "Cloning local_manifests repository..."
