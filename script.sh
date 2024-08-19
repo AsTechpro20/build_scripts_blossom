@@ -46,4 +46,4 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building Lineage-20..."
 echo "===================================="
-brunch blossom-userdebug
+brunch blossom-userdebug || brunch blossom
