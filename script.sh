@@ -1,4 +1,4 @@
-#Lineage-20 build script
+#Lineage-20 build_script_blossom
 
 # Remove some stuffs
 rm -rf .repo/local_manifests/ 
@@ -12,7 +12,7 @@ echo "Removing stuffs success..."
 echo "===================================="
 
 # Clone local_manifests repository
-git clone https://github.com/AsTechpro20/local_manifests.git -b A13 .repo/local_manifests
+git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b Lineage-20 .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
