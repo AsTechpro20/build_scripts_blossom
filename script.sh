@@ -24,7 +24,7 @@ echo "Initializing Lineage-21 repo was success..."
 echo "===================================="
 
 # Sync the repositories
-/opt/crave/resync.sh 
+/opt/crave/resync.sh || repo sync
 echo "===================================="
 echo "Syncing the repositories was success..."
 echo "===================================="
