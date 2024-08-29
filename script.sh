@@ -18,7 +18,7 @@ echo "Cloning local_manifests was success..."
 echo "===================================="
 
 # Initialize Matrixx-14 repo
-repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0 --git-lfs
+repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0-qpr2 --git-lfs
 echo "===================================="
 echo "Initializing Matrixx-14 repo was success..."
 echo "===================================="
