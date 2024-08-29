@@ -46,5 +46,5 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building Matrixx-14..."
 echo "===================================="
-lunch lineage_blossom-userdebug && m bacon || lunch lineage_blossom-ap2a-userdebug && m bacon || brunch blossom   
+lunch lineage_blossom-ap2a-userdebug && m bacon || brunch blossom   
 
