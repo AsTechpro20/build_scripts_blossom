@@ -46,5 +46,5 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building Lineage-21..."
 echo "===================================="
-brunch blossom || brunch blossom-userdebug || lunch lineage_blossom-ap2a-userdebug && mka bacon
+brunch blossom || lunch lineage_blossom-ap2a-userdebug && mka bacon || brunch blossom-userdebug
  
