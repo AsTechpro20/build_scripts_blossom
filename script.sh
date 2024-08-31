@@ -1,4 +1,4 @@
-#Lineage-21 build_script_blossom
+#ProjectSakura-14 build_script_blossom
 
 # Remove some stuffs
 rm -rf .repo/local_manifests
@@ -17,8 +17,8 @@ echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
-# Initialize Lineage-21 repo
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
+# Initialize ProjectSakura-14 repo
+repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 14 --git-lfs
 echo "===================================="
 echo "Initializing Lineage-21 repo was success..."
 echo "===================================="
@@ -42,9 +42,9 @@ echo "Setting up build environment..."
 echo "===================================="
 source build/envsetup.sh
 
-#Building Lineage-21
+#Building ProjectSakura-14
 echo "===================================="
-echo "Building Lineage-21..."
+echo "Building ProjectSakura-14..."
 echo "===================================="
-brunch blossom || brunch blossom-userdebug || lunch lineage_blossom-ap2a-userdebug && mka bacon  
+lunch lineage_blossom-ap2a-userdebug && mka bacon  
  
