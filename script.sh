@@ -18,7 +18,7 @@ echo "Cloning local_manifests was success..."
 echo "===================================="
 
 # Initialize Evolution-X-14 repo
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs
 echo "===================================="
 echo "Initializing Evolution-X-14 repo was success..."
 echo "===================================="
