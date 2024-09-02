@@ -36,15 +36,10 @@ echo "===================================="
 export BUILD_USERNAME=AsTechpro20
 export BUILD_HOSTNAME=crave
 
-# Set up build environment
-echo "===================================="
-echo "Setting up build environment..."
-echo "===================================="
-source build/envsetup.sh
-
 #Building ProjectBlaze-14
 echo "===================================="
 echo "Building ProjectBlaze-14..."
 echo "===================================="
+. build/envsetup.sh
 lunch blaze_blossom-userdebug && make bacon  || lunch blaze_blossom-ap2a-userdebug && make bacon  
  
