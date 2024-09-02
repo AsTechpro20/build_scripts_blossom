@@ -11,16 +11,16 @@ echo "===================================="
 echo "Removing stuffs success..."
 echo "===================================="
 
-# Clone local_manifests repository
-git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b Lineage-21 .repo/local_manifests
-echo "===================================="
-echo "Cloning local_manifests was success..."
-echo "===================================="
-
 # Initialize AfterLife-14 repo
 repo init --depth=1 -u https://github.com/AfterlifeOS/android_manifest.git -b 14 --git-lfs
 echo "===================================="
 echo "Initializing AfterLife-14 repo was success..."
+echo "===================================="
+
+# Clone local_manifests repository
+git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b Lineage-21 .repo/local_manifests
+echo "===================================="
+echo "Cloning local_manifests was success..."
 echo "===================================="
 
 # Sync the repositories
