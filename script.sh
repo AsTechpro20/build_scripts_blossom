@@ -1,4 +1,4 @@
-#Lineage-21 build_script_blossom
+#ProjectBlaze-14 build_script_blossom
 
 # Remove some stuffs
 rm -rf .repo/local_manifests
@@ -17,10 +17,10 @@ echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
-# Initialize Lineage-21 repo
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
+# Initialize ProjectBlaze-14 repo
+repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14
 echo "===================================="
-echo "Initializing Lineage-21 repo was success..."
+echo "Initializing ProjectBlaze-14 repo was success..."
 echo "===================================="
 
 # Sync the repositories
@@ -42,9 +42,9 @@ echo "Setting up build environment..."
 echo "===================================="
 source build/envsetup.sh
 
-#Building Lineage-21
+#Building ProjectBlaze-14
 echo "===================================="
-echo "Building Lineage-21..."
+echo "Building ProjectBlaze-14..."
 echo "===================================="
-brunch blossom || brunch blossom-userdebug || lunch lineage_blossom-ap2a-userdebug && mka bacon  
+lunch blaze_blossom-ap2a-userdebug && make bacon  
  
