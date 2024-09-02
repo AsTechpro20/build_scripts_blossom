@@ -40,7 +40,7 @@ export BUILD_HOSTNAME=crave
 echo "===================================="
 echo "Setting up build environment..."
 echo "===================================="
-source build/envsetup.sh
+. build/envsetup.sh
 
 #Building AfterLife-14
 echo "===================================="
