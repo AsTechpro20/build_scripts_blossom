@@ -46,5 +46,5 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building ProjectBlaze-14..."
 echo "===================================="
-lunch blaze_blossom-ap2a-userdebug && make bacon  
+lunch blaze_blossom-userdebug && make bacon  || lunch blaze_blossom-ap2a-userdebug && make bacon  
  
