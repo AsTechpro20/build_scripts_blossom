@@ -31,6 +31,7 @@ echo "===================================="
 
 #  Patch
 rm -rf external/chromium-webview  
+rm -rf packages/apps/ParanoidSense
 echo "===================================="
 echo "Patch done!..."
 echo "===================================="
