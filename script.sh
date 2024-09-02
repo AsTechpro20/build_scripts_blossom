@@ -11,16 +11,16 @@ echo "===================================="
 echo "Removing stuffs success..."
 echo "===================================="
 
-# Clone local_manifests repository
-git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b blaze-14 .repo/local_manifests
-echo "===================================="
-echo "Cloning local_manifests was success..."
-echo "===================================="
-
 # Initialize ProjectBlaze-14 repo
 repo init --depth=1 -u https://github.com/ProjectBlaze/manifest -b 14
 echo "===================================="
 echo "Initializing ProjectBlaze-14 repo was success..."
+echo "===================================="
+
+# Clone local_manifests repository
+git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b blaze-14 .repo/local_manifests
+echo "===================================="
+echo "Cloning local_manifests was success..."
 echo "===================================="
 
 # Sync the repositories
