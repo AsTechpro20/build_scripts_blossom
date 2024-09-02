@@ -18,7 +18,7 @@ echo "Initializing AfterLife-14 repo was success..."
 echo "===================================="
 
 # Clone local_manifests repository
-git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b Lineage-21 .repo/local_manifests
+git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b afterlife-14 .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
