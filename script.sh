@@ -48,5 +48,5 @@ echo "===================================="
 echo "Building AfterLife-14..."
 echo "===================================="
 . build/envsetup.sh
-goafterlife blossom || goafterlife blossom-userdebug
+goafterlife blossom userdebug
  
