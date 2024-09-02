@@ -18,7 +18,7 @@ echo "Cloning local_manifests was success..."
 echo "===================================="
 
 # Initialize Matrixx-14 repo
-repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0-qpr2 --git-lfs
+repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0 --git-lfs
 echo "===================================="
 echo "Initializing Matrixx-14 repo was success..."
 echo "===================================="
@@ -46,5 +46,5 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building Matrixx-14..."
 echo "===================================="
-lunch lineage_blossom-ap2a-userdebug && m bacon || brunch blossom   
+brunch blossom || brunch blossom-userdebug
 
