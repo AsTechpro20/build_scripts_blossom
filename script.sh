@@ -43,15 +43,10 @@ echo "===================================="
 export BUILD_USERNAME=AsTechpro20
 export BUILD_HOSTNAME=crave
 
-# Set up build environment
-echo "===================================="
-echo "Setting up build environment..."
-echo "===================================="
-. build/envsetup.sh
-
 #Building AfterLife-14
 echo "===================================="
 echo "Building AfterLife-14..."
 echo "===================================="
-goafterlife blossom
+. build/envsetup.sh
+goafterlife blossom || goafterlife blossom-userdebug
  
