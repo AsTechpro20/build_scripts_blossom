@@ -38,12 +38,13 @@ echo "===================================="
 echo "Syncing the repositories was success..."
 echo "===================================="
 
-#  Error fix patch 
+# Error fix patch 
 rm -rf external/chromium-webview  
 rm -rf packages/apps/ParanoidSense
 echo "===================================="
 echo "Error fix patch done..."
 echo "===================================="
+
 # Exports
 echo "===================================="
 echo "Adding exports..."
@@ -51,7 +52,7 @@ echo "===================================="
 export BUILD_USERNAME=AsTechpro20
 export BUILD_HOSTNAME=crave
 
-#Building AfterLife-14
+# Building AfterLife-14
 echo "===================================="
 echo "Building AfterLife-14..."
 echo "===================================="
