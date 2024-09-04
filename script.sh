@@ -30,13 +30,6 @@ echo "===================================="
 echo "Syncing the repositories was success..."
 echo "===================================="
 
-#  Patch
-rm -rf external/chromium-webview  
-rm -rf packages/apps/ParanoidSense
-echo "===================================="
-echo "Patch done!..."
-echo "===================================="
-
 # Exports
 echo "===================================="
 echo "Adding exports..."
