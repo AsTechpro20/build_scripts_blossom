@@ -19,7 +19,7 @@ echo "===================================="
 
 # Patch 
 rm -f .repo/manifests/snippets/lineage.xml
-curl -o .repo/manifests/snippets/lineage.xml https://raw.githubusercontent.com/AsTechpro20/patches_blossom/afterlife-14/lineage.xml
+curl -o .repo/manifests/snippets/lineage.xml https://raw.githubusercontent.com/AsTechpro20/patches_blossom/afterlife-14/lineage.xml 
 echo "===================================="
 echo "Patch done..."
 echo "===================================="
