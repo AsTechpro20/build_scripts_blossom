@@ -18,8 +18,10 @@ echo "Initializing AfterLife-14 repo was success..."
 echo "===================================="
 
 # Patch 
-rm -f .repo/manifests/snippets/lineage.xml
-curl -o .repo/manifests/snippets/lineage.xml https://raw.githubusercontent.com/AsTechpro20/patches_blossom/afterlife-14/lineage.xml 
+cd .repo/manifests/snippets
+rm -rf lineage.xml
+curl -O https://raw.githubusercontent.com/AsTechpro20/patches_blossom/afterlife-14/lineage.xml
+cd ../../.. 
 echo "===================================="
 echo "Patch done..."
 echo "===================================="
