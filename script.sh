@@ -11,6 +11,12 @@ echo "===================================="
 echo "Removing stuffs success..."
 echo "===================================="
 
+# Initialize AfterLife-14 repo
+repo init --depth=1 -u https://github.com/AfterlifeOS/android_manifest.git -b 14 --git-lfs
+echo "===================================="
+echo "Initializing AfterLife-14 repo was success..."
+echo "===================================="
+
 # Clone local_manifests repository
 git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b afterlife-14 .repo/local_manifests
 echo "===================================="
