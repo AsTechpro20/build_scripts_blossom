@@ -17,6 +17,16 @@ echo "===================================="
 echo "Initializing AfterLife-14 repo was success..."
 echo "===================================="
 
+# Patch 
+cd .repo/manifests/snippets
+rm -rf lineage.xml
+curl -O https://raw.githubusercontent.com/AsTechpro20/patches_blossom/afterlife-14/lineage.xml
+cd ../../.. 
+echo "===================================="
+echo "Patch done..."
+echo "===================================="
+
+
 # Clone local_manifests repository
 git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b afterlife-14 .repo/local_manifests
 echo "===================================="
