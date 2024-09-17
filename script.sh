@@ -1,4 +1,4 @@
-#TenX-OS=14 build_script_blossom
+#TenX-OS-14 build_script_blossom
 
 # Remove some stuffs
 rm -rf .repo/local_manifests
