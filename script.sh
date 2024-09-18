@@ -46,6 +46,5 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building TenX-OS-14..."
 echo "===================================="
-make clean
 brunch blossom || brunch blossom-userdebug || lunch lineage_blossom-ap2a-userdebug && mka bacon  
  
