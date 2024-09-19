@@ -1,4 +1,4 @@
-#EverestOS-14 build_script_blossom
+#AfterLife-14 build_script_blossom
 
 # Remove some stuffs
 rm -rf .repo/local_manifests
@@ -12,21 +12,29 @@ echo "Removing stuffs success..."
 echo "===================================="
 
 # Clone local_manifests repository
-git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b EverestOS-14 .repo/local_manifests
+git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b afterlife-14 .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
-# Initialize EverestOS-14 repo
-repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
+# Initialize AfterLife-14 repo
+repo init --depth=1 -u https://github.com/AfterlifeOS/android_manifest.git -b 14 --git-lfs
 echo "===================================="
-echo "Initializing EverestOS-14 repo was success..."
+echo "Initializing AfterLife-14 repo was success..."
 echo "===================================="
+
 
 # Sync the repositories
 /opt/crave/resync.sh || repo sync
 echo "===================================="
 echo "Syncing the repositories was success..."
+echo "===================================="
+
+# Error fix patch 
+rm -rf external/chromium-webview  
+rm -rf packages/apps/ParanoidSense
+echo "===================================="
+echo "Error fix patch done..."
 echo "===================================="
 
 # Exports
@@ -36,16 +44,9 @@ echo "===================================="
 export BUILD_USERNAME=AsTechpro20
 export BUILD_HOSTNAME=crave
 
-# Set up build environment
+# Building AfterLife-14
 echo "===================================="
-echo "Setting up build environment..."
+echo "Building AfterLife-14..."
 echo "===================================="
-source build/envsetup.sh
-
-#Building EverestOS-14
-echo "===================================="
-echo "Building EverestOS-14..."
-echo "===================================="
-lunch lineage_blossom-user && mka everest || lunch lineage_blossom-ap2a-user && mka everest 
-  
- 
+. build/envsetup.sh
+goafterlife blossom 
