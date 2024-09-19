@@ -32,7 +32,6 @@ echo "===================================="
 
 # Error fix patch 
 rm -rf external/chromium-webview  
-rm -rf packages/apps/ParanoidSense
 echo "===================================="
 echo "Error fix patch done..."
 echo "===================================="
