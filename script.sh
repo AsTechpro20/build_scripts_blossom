@@ -1,4 +1,4 @@
-#Lineage-21 build_script_blossom
+#EverestOS-14 build_script_blossom
 
 # Remove some stuffs
 rm -rf .repo/local_manifests
@@ -12,15 +12,15 @@ echo "Removing stuffs success..."
 echo "===================================="
 
 # Clone local_manifests repository
-git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b Lineage-21 .repo/local_manifests
+git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b EverestOS-14 .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
-# Initialize Lineage-21 repo
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
+# Initialize EverestOS-14 repo
+repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
 echo "===================================="
-echo "Initializing Lineage-21 repo was success..."
+echo "Initializing EverestOS-14 repo was success..."
 echo "===================================="
 
 # Sync the repositories
@@ -42,9 +42,10 @@ echo "Setting up build environment..."
 echo "===================================="
 source build/envsetup.sh
 
-#Building Lineage-21
+#Building EverestOS-14
 echo "===================================="
-echo "Building Lineage-21..."
+echo "Building EverestOS-14..."
 echo "===================================="
-brunch blossom || brunch blossom-userdebug || lunch lineage_blossom-ap2a-userdebug && mka bacon  
+lunch lineage_blossom-user && mka everest || lunch lineage_blossom-ap2a-user && mka everest 
+  
  
