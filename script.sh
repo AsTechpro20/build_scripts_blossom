@@ -23,17 +23,10 @@ echo "===================================="
 echo "Initializing AfterLife-14 repo was success..."
 echo "===================================="
 
-
 # Sync the repositories
 /opt/crave/resync.sh || repo sync
 echo "===================================="
 echo "Syncing the repositories was success..."
-echo "===================================="
-
-# Error fix patch 
-rm -rf external/chromium-webview  
-echo "===================================="
-echo "Error fix patch done..."
 echo "===================================="
 
 # Exports
