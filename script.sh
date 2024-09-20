@@ -41,4 +41,4 @@ echo "===================================="
 echo "Building AfterLife-14..."
 echo "===================================="
 . build/envsetup.sh
-make clean && goafterlife blossom 
+goafterlife blossom && make clean && goafterlife blossom 
