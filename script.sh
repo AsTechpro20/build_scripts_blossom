@@ -46,5 +46,5 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building Matrixx-14..."
 echo "===================================="
-lunch infinity_blosssom-userdebug && mka bacon
+lunch infinity_blossom-userdebug && mka bacon
 
