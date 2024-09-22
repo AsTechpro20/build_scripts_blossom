@@ -1,4 +1,4 @@
-#Matrixx-14 build_script_blossom
+#ProjectInfinity-X-14 build_script_blossom
 
 # Remove some stuffs
 rm -rf .repo/local_manifests
@@ -12,15 +12,15 @@ echo "Removing stuffs success..."
 echo "===================================="
 
 # Clone local_manifests repository
-git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b matrixx-14 .repo/local_manifests
+git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b Infinity-X-14 .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
-# Initialize Matrixx-14 repo
+# Initialize ProjectInfinity-X-14 repo
 repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0 --git-lfs
 echo "===================================="
-echo "Initializing Matrixx-14 repo was success..."
+echo "Initializing ProjectInfinity-X-14 repo was success..."
 echo "===================================="
 
 # Sync the repositories
@@ -42,9 +42,9 @@ echo "Setting up build environment..."
 echo "===================================="
 source build/envsetup.sh
 
-#Building Matrixx-14
+#Building ProjectInfinity-X-14
 echo "===================================="
 echo "Building Matrixx-14..."
 echo "===================================="
-brunch blossom || brunch blossom-userdebug
+lunch infinity_blosssom-userdebug && mka bacon
 
