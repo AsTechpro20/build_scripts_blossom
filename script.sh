@@ -18,7 +18,7 @@ echo "Cloning local_manifests was success..."
 echo "===================================="
 
 # Initialize ProjectInfinity-X-14 repo
-repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0 --git-lfs
+repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b QPR3 -g default,-mips,-darwin,-notdefault
 echo "===================================="
 echo "Initializing ProjectInfinity-X-14 repo was success..."
 echo "===================================="
