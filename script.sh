@@ -44,7 +44,7 @@ source build/envsetup.sh
 
 #Building ProjectInfinity-X-14
 echo "===================================="
-echo "Building Matrixx-14..."
+echo "Building ProjectInfinity-X-14..."
 echo "===================================="
 lunch infinity_blossom-userdebug && mka bacon
 
