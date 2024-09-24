@@ -1,4 +1,4 @@
-#Matrixx-14 build_script_blossom
+#CipherOS-15 build_script_blossom
 
 # Remove some stuffs
 rm -rf .repo/local_manifests
@@ -12,15 +12,15 @@ echo "Removing stuffs success..."
 echo "===================================="
 
 # Clone local_manifests repository
-git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b matrixx-14 .repo/local_manifests
+git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b CipherOS-15 .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
-# Initialize Matrixx-14 repo
-repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0 --git-lfs
+# Initialize CipherOS-15 repo
+repo init -u https://github.com/CipherOS/android_manifest.git -b fifteen
 echo "===================================="
-echo "Initializing Matrixx-14 repo was success..."
+echo "Initializing CipherOS-15 repo was success..."
 echo "===================================="
 
 # Sync the repositories
@@ -42,9 +42,9 @@ echo "Setting up build environment..."
 echo "===================================="
 source build/envsetup.sh
 
-#Building Matrixx-14
+#Building CipherOS-15
 echo "===================================="
-echo "Building Matrixx-14..."
+echo "Building CipherOS-15..."
 echo "===================================="
-brunch blossom || brunch blossom-userdebug
+lunch cipher_blossom-userdebug && mka bacon
 
