@@ -46,5 +46,5 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building CipherOS-15..."
 echo "===================================="
-lunch cipher_blossom-userdebug && mka bacon
+lunch cipher_blossom-ap3a-userdebug && mka bacon
 
