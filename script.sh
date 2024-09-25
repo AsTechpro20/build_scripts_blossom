@@ -12,13 +12,13 @@ echo "Removing stuffs success..."
 echo "===================================="
 
 # Clone local_manifests repository
-git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b matrixx-14 .repo/local_manifests
+git clone https://github.com/AsTechpro20/local_manifests_blossom.git -b idk .repo/local_manifests
 echo "===================================="
 echo "Cloning local_manifests was success..."
 echo "===================================="
 
 # Initialize Matrixx-14 repo
-repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0 --git-lfs
+repo init -u https://github.com/AsTechpro20/platform_manifest_RR.git -b Q
 echo "===================================="
 echo "Initializing Matrixx-14 repo was success..."
 echo "===================================="
@@ -46,5 +46,5 @@ source build/envsetup.sh
 echo "===================================="
 echo "Building Matrixx-14..."
 echo "===================================="
-brunch blossom || brunch blossom-userdebug
+lunch rr_blossom-userdebug && mka bacon
 
