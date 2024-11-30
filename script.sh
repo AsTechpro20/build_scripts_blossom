@@ -7,6 +7,7 @@ rm -rf  kernel/xiaomi
 rm -rf  device/xiaomi
 rm -rf  device/mediatek
 rm -rf  hardware/mediatek
+rm -rf  device/mediatek/sepolicy_vndr
 echo "===================================="
 echo "Removing stuffs success..."
 echo "===================================="
